@@ -267,11 +267,6 @@ body:not(.user-is-tabbing) a:focus {
     border-width: 2px;
 }
 
-.header__social-links {
-    display: flex;
-    padding: var(--gutter-normal) 0;
-    list-style: none;
-}
 
 .link__text {
     position: relative;
