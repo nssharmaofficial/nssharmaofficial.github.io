@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/nb.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Natasa Brisudova Porfolio
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+      
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#references" class="nav__link">References</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Natasa Brisudova</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Biomedical Engineer | Data Scientist  </p>
+          
+        <ul class="header__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://linkedin.com/in/natasa-brisudova" title="Link to Linkedin Profile">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+          
+        <li class="footer__social-link-item">
+          <a href="https://github.com/natasabrisudova/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        </ul>
+          
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+              
+            <div class="work__text">
+              <h3>Spondylodiscitidis vs. Metastasis  </h3>
+              <p>
+                Bachelor thesis on class prediction with the data provided from the Oncological Institute of st.Elisabeth in Bratislava
+              </p>
+                
+              <ul class="work__list">
+                <li>R language</li>
+                <li>Random Forest</li>
+                <li>Logistic Regression</li>
+                <li>Support Vector Machines</li>                 
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/ML-binary-classification-thesis" target="_blank" class="link__text">
+                  View Source Code <span>&rarr;</span>                  
+                </a>
+               </div>
+             </div>
+              
+            <div class="work__image-box">
+              <img src="./images/ml_r.jpg" class="work__image" alt="ml_r" />
+            </div>
+              
+          </div>
+            
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Shiny web app for prediction </h3>
+              <p>
+                Web application in r shiny with built-in random 
+                  forest model for predicting the class of a lession in the spine
+              </p>
+                
+              <ul class="work__list">
+                <li>R language</li>
+                <li>R shiny</li>                
+              </ul>
+
+              <div class="work__links">
+                <a href="https://natasabrisudova.shinyapps.io/ML-app/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>                
+                </a>
+                <a href="https://github.com/natasabrisudova/Shiny-App-ML-prediction" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+               </div>
+                
+             </div>
+              
+             <div class="work__image-box">
+               <img src="./images/shiny_app.jpg" class="work__image" alt="shiny_app" />
+             </div>
+          </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Binary classification using neural network</h3>
+              <p>
+                Class classification project with the data provided from the Oncological Institute of st.Elisabeth in Bratislava
+              </p>
+                
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Neural Network</li>
+                <li>Numpy</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/ML_assignment-binary-classification-" class="link__text">
+                  View Source Code<span>&rarr;</span>
+                </a>   
+              </div>
+                
+             </div>
+              
+            <div class="work__image-box">
+              <img src="./images/ml_py.png" class="work__image" alt="ml_py" />
+            </div>
+          </div>
+                
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Discrete event systems simulation</h3>
+              <p>
+                Simulation of production system composed of a one-place buffer followed by the series interconnection of two machines
+              </p>
+                
+              <ul class="work__list">
+                <li>Matlab</li>
+                <li>Stochastic state and timed automaton</li>
+                <li>Markov chain</li>
+                <li>Steady state analysis</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/Project-Discrete-Event-Systems" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+                
+            </div>
+              
+            <div class="work__image-box">
+              <img src="./images/automata.jpg" class="work__image" alt="automata" />
+            </div>
+          </div>
+            
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Instacart purchase prediction</h3>
+              <p>
+                Kaggle competition with the objective to predict which previously purchased products will be in a users next order
+              </p>
+                
+              <ul class="work__list">
+                <li>Big data</li>
+                <li>Jupyter notebook</li>
+                <li>Pandas</li>
+                <li>XGBoost</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/Big-Data-Instacart-ML" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+                
+            </div>
+              
+            <div class="work__image-box">
+              <img src="./images/bigdata.jpg" class="work__image" alt="bigdata" />
+            </div>
+          </div>
+         
+         <div class="work__box">
+           <div class="work__text">
+              <h3>K-means parallel computing</h3>
+              <p>
+                K-means algorithm parallelized using GPU for better performance
+              </p>
+               
+              <ul class="work__list">
+                <li>C++</li>
+                <li>Cuda</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/K-Means-Parallel-Computing" class="link__text">
+                  View Source Code <span>&rarr;</span>
+                </a>
+              </div>
+               
+            </div>
+             
+            <div class="work__image-box">
+              <img src="./images/hpca.jpg" class="work__image" alt="hpca" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Snake game  </h3>
+              <p>
+                Implementation of the retro snake game
+                  
+              </p>
+              <ul class="work__list">
+                <li>C++</li>   
+                <li>Object oriented programming</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://github.com/natasabrisudova/SnakeGame" target="_blank" class="link__text">
+                  View Source Code <span>&rarr;</span>              
+                </a>
+                  
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/snake.png" class="work__image" alt="snake" />
+            </div>
+          </div>
+              
+       </div>
+    </div>
+    </section>
+            
+            
+    <!-- ***** Clients// References ***** -->
+
+    <section class="references" id="references">
+      <div class="row">
+        <h2>References</h2> 
+          
+          <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+            <div class="mySlides1">
+                <q>During our collaboration, Natasa showed unusual intelligence, proactiveness, reactivity and diligence as well as impressive scope of knowledge and skills. The potential of Natasa for successful professional growth to excel in technology and become leader in the field is obvious.</q>
+                <p class="author">- Assoc.Prof.Sona Balogova, PhD. (Comenius University) </p>
+            </div>
+
+            <div class="mySlides1">
+                <q>Natasa belongs to the students gifted with deep biophysical insight. Her practical skills are nicely blended with knowledge of methodology of scientific work and her skills also include computer literacy - specifically in programming, data processing and modelling. She is diligent, humble and attentive person, able to work independently as well as a part of a team. She prefers working with someone who is similarly accountable and motivated to accomplish set tasks.</q>
+                <p class="author">- Assoc.Prof.RNDr Iveta Waczulikova, PhD. (Comenius University) </p>
+            </div>
+
+
+  <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+          </div>
+
+<!-- Dots/bullets/indicators -->
+         <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+         </div> 
+            
+        </div>
+    </section>
+      
+
+      
+    
+    <!-- ***** Achievements ***** -->
+      
+      
+    <section class="achievements" id="achievements">
+      <div class="row">
+        <h2>Achievements</h2> 
+          
+          <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+            
+            <div class="mySlides2">
+                <em>Italian government scholarship in 2021 and 2022</em>
+                <p class="author"> University of Siena </p>
+            </div>
+            
+            <div class="mySlides2">
+                <em>Scholarship Wings for socially engaged students in 2021</em>
+                <p class="author"> Provida </p>
+            </div>
+            
+            <div class="mySlides2">
+                <ul style="list-style-type: none; ">
+                <li><em>Diploma with honours</em></li>
+                <li><em>Rector's award for benefitial thesis and great academic results</em></li>
+                <li><em>Academic Scholarship in 2019 and 2020</em></li>
+                </ul>
+                <p class="author"> Comenius University </p>
+            </div>
+
+            <div class="mySlides2">
+                <em>Award winning work in the field "omics"</em>
+                <p class="author"> Interactive conference Preveda for young scientists, 2021 </p>
+            </div>
+            
+            <div class="mySlides2">
+                <em>Poster presentation and abstract publication in BMC Proceedings</em>
+                <p class="author"> International Conference for Healthcare and Medical Students, 2021 </p>
+            </div>
+            
+            <div class="mySlides2">
+                <em>Award for the best research project and publication in medical journal Nuclear Medicine</em>
+                <p class="author"> Student Day of Nuclear Medicine Conference, 2020 </p>
+            </div>
+
+  <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+              
+          </div>
+
+<!-- Dots/bullets/indicators -->
+         <div class="dot-container">
+            <span class="dot2" onclick="currentSlide2(1)"></span>
+            <span class="dot2" onclick="currentSlide2(2)"></span>
+            <span class="dot2" onclick="currentSlide2(3)"></span>
+            <span class="dot2" onclick="currentSlide2(4)"></span>
+            <span class="dot2" onclick="currentSlide2(5)"></span>
+            <span class="dot2" onclick="currentSlide2(6)"></span>
+             
+         </div> 
+            
+        </div>
+    </section>
+       
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Hard-working, flexible, detail-orientated and responsible master's degree student of Artificial Intelligence currently based in Siena, Italy. Implementing IT in medical field along with data science is my passion. During my previous education and project opportunities I have gained organizational skills, a better sense of time management as well as the ability to work under pressure.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1vw5IDqzAbTqA5AVtp9DI3W3hufvf4E1T/view?usp=sharing" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/profile_pic.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    
+    
+    
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Do you think machine learning would help you to solve a problem? Are 
+          you looking for someone who can analyse and visualize your data?
+          Are you looking for any kind of consultation, or want to ask questions?
+          Whether you have some advice for me or just want to say "Hi 👋" in any case feel 
+          free to Let me know. I will do my best to respond back. 😊 
+          The quickest way to reach out to me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:natasa.brisudova@gmail.com" class="btn">natasa.brisudova@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+        
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://linkedin.com/in/natasa-brisudova" title="Link to Linkedin Profile">
+            <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+          
+        <li class="footer__social-link-item">
+          <a href="https://github.com/natasabrisudova/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+      </ul>
+                                                                                                   
+      <p>
+        &copy; 2022  
+      </p>
+        
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=natasabrisudova&repo=natasabrisudova.github.io&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+        
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
