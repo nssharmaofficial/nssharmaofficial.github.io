@@ -1,6 +1,8 @@
 
 ### Minimal and accessible portfolio  ✨.
 
+![](https://api.visitorbadge.io/api/VisitorHit?user=natasabrisudova&repo=natasabrisudova.github.io&countColor=%237B1E7A)
+
 To View the live site click [here &rarr;](https://natasabrisudova.github.io)
 
 ![Portfolio Gif](/images/portfolio.png)
