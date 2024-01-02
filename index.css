@@ -163,6 +163,12 @@ img {
     .heading-primary {
         font-size: var(--font-size-large);
     }
+    
+    .header__text {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
 
     p {
         max-width: 100%; /* Ensure paragraphs don't overflow on smaller screens */
@@ -188,9 +194,6 @@ img {
         display: none;
     }
 
-    .header__text {
-        text-align: center;
-    }
 
     .work__box {
         flex-direction: column;
