@@ -72,7 +72,7 @@ body {
     font-weight: 400;
     color: var(--black);
     line-height: var(--line-height-normal);
-    background: floralwhite;
+    background: #fffafa ;
     overflow-x: hidden;
 }
 
@@ -123,7 +123,7 @@ img {
     }
     body {
         font-size: var(--font-size-small);
-        background: floralwhite;
+        background: #fffafa;
     }
 
     * {
@@ -476,7 +476,7 @@ body:not(.user-is-tabbing) a:focus {
 .nav__items {
     display: flex;
     list-style: none;
-    color: white;
+    color: black;
 }
 
 .nav__item:not(:last-child) {
@@ -544,6 +544,19 @@ body:not(.user-is-tabbing) a:focus {
     background-size: 400% 400%;
     font-size: var(--font-size-normal);
 }
+
+.headerimage {
+    background: url('./images/logo4.png') center center/cover no-repeat;
+    height: 100vh;
+    font-size: var(--font-size-normal);
+}
+
+/*
+@media (max-width: 768px) {
+    .header {
+        background-size:cover; 
+}
+*/
 
 @keyframes gradient {
 	0% {
