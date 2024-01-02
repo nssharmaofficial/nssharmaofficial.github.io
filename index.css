@@ -77,7 +77,6 @@ body {
 }
 
 
-
 .row {
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -129,14 +128,24 @@ img {
     }
 
     .slideshow-container {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        border-radius: 20px; /* Adjust border-radius for a softer look on smaller screens */
+        border-radius: 5px; 
+        font-size: 15px;
     }
 
-    .mySlides1,
+    .mySlides1 {
+      display: none;
+      padding: 5px;
+      text-align: center;
+      font-size: 15px;
+    }
+
     .mySlides2 {
-        padding: 20px; /* Adjust padding for smaller screens */
+      display: none;
+      padding: 5px;
+      text-align: center;
+      font-size: 15px;
     }
 
     h1 {
@@ -164,21 +173,19 @@ img {
     }
 
     .nav {
-        padding: var(--gutter-small) 0;
+        display: none;
+    }
+    
+    .nav__item {
+        display: none;
     }
 
     .nav__items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav__item:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: var(--gutter-small);
+        display: none;
     }
 
     .nav__link {
-        text-align: center;
+        display: none;
     }
 
     .header__text {
@@ -642,7 +649,7 @@ body:not(.user-is-tabbing) a:focus {
   border: 3px solid var(--pink2);
   border-radius: 70px;
   font-size: 20px;
-  width: 60%; /* Adjust the percentage or use a specific value like pixels (px) */
+  width: 100%; /* Adjust the percentage or use a specific value like pixels (px) */
   margin: 0 auto; /* Center the container horizontally */
   display: block; /* Ensure it takes up the full width */
 }
