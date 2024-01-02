@@ -62,7 +62,7 @@ html {
 
 @media(max-width: 1000px) {
     html {
-        font-size: 52%;
+        font-size: 50%;
     }
 }
 
@@ -117,16 +117,21 @@ img {
 }
 
 /* Mobile-friendly adjustments */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     html {
         font-size: 50%; /* Adjust the base font size for smaller screens */
     }
-
     body {
         font-size: var(--font-size-small);
         background: floralwhite;
     }
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+    }
+    
     .slideshow-container {
         width: 100%;
         margin: 0 auto;
@@ -162,12 +167,19 @@ img {
 
     .heading-primary {
         font-size: var(--font-size-large);
+        text-align: center;
+        width: 100%;
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
     }
     
     .header__text {
         text-align: center;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
     }
 
     p {
