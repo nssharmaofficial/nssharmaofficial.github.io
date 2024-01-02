@@ -82,6 +82,30 @@ body {
     margin: 0 auto;
 }
 
+@media(max-width: 1340px) {
+    .row {
+        max-width: 1100px;
+    }
+}
+
+@media(max-width: 1240px) {
+    .row {
+        padding: 0 var(--gutter-medium);
+    }
+}
+
+@media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-normal);
+    }
+}
+
+@media(max-width: 600px) {
+    .row {
+        padding: 0 var(--gutter-small);
+    }
+}
+
 section {
     padding: var(--gutter-huge) 0;
     border-bottom: var(--border-light);
@@ -91,7 +115,6 @@ img {
     object-fit: contain;
     max-width: 100%;
 }
-
 
 /* Mobile-friendly adjustments */
 @media (max-width: 768px) {
@@ -107,8 +130,8 @@ img {
     .slideshow-container {
         width: 100%;
         margin: 0 auto;
-        border-radius: 5px; /* Adjust border-radius for a softer look on smaller screens */
-        font-size: var(--font-size-medium);
+        border-radius: 5px; 
+        font-size: 15px;
     }
 
     .mySlides1 {
@@ -148,21 +171,21 @@ img {
     .row {
         padding: 0 var(--gutter-small);
     }
-    
+
     .nav {
-        flex-direction: column; /* Change the flex-direction to column on smaller screens */
-        align-items: flex-end; /* Align items to the right within the column */
-        padding: var(--gutter-small) 0; /* Adjust padding for smaller screens */
+        display: none;
+    }
+    
+    .nav__item {
+        display: none;
     }
 
     .nav__items {
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 
-    .nav__item:not(:last-child) {
-        margin-right: 0; /* Remove the right margin to stack items vertically */
-        margin-bottom: var(--gutter-small); /* Add bottom margin for better spacing */
+    .nav__link {
+        display: none;
     }
 
     .header__text {
@@ -200,6 +223,7 @@ img {
     }
 }
 
+
 /* --------------------------------------- */
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
@@ -219,6 +243,11 @@ h3 {
     font-weight: 400;
 }
 
+@media(max-width: 900px) {
+    .heading-primary {
+        font-size: 6.5rem;
+    }
+}
 
 h2 {
     font-size: var(--font-size-large);
@@ -239,9 +268,28 @@ h3 {
     margin-bottom: var(--gutter-small);
 }
 
+@media(max-width: 500px) {
+    .heading-primary {
+        font-size: var(--font-size-large);
+    }
+
+    h2 {
+        font-size: var(--font-size-medium-1);
+    }
+
+    h3 {
+        font-size: var(--font-size-medium);
+    }
+}
 
 p {
     margin: var(--gutter-small-1) 0;
+}
+
+@media(max-width: 900px) {
+    p { 
+        max-width: var(--container-small-width);
+    }
 }
 
 /* --------------------------------------- */
@@ -388,6 +436,18 @@ body:not(.user-is-tabbing) a:focus {
     height: 70%;
 }
 
+@media(max-width: 900px) {
+    .back-to-top {
+        right: 2rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .back-to-top {
+        right: 1rem;
+    }
+}
+
 /* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
@@ -408,6 +468,24 @@ body:not(.user-is-tabbing) a:focus {
     margin-right: var(--gutter-medium);
 }
 
+@media(max-width: 500px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 400px) {
+    .nav__item:not(:last-child) {
+        margin-right: var(--gutter-normal);
+    }
+}
+
+@media(max-width: 300px) {
+    .nav {
+        font-size: var(--font-size-small);
+    }
+}
+
 .nav__link {
     position: relative;
     display: inline-block;
@@ -424,8 +502,8 @@ body:not(.user-is-tabbing) a:focus {
     left: 0;
     right: 100%;
     display: inline-block;
-    height: 2px; /* Increase the height for a more pronounced effect */
-    background: transparent; /* Start with a transparent background */
+    height: 1rem;
+    background: var(--black);
     transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
@@ -435,7 +513,8 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav__link:hover::after {
     right: 0;
-    background: var(--pink); /* Transition to a pink background on hover */
+    height: 2px;
+    background: var(--pink);
 }
 
 
@@ -496,8 +575,21 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
+@media(max-width: 900px) {
+    .work__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
+}
+
 .work__box:not(:last-child) {
     margin-bottom: 25rem;
+}
+
+@media(max-width: 500px) {
+    .work__box:not(:last-child) {
+        margin-bottom: 20rem;
+    }
 }
 
 .work__links {
@@ -532,6 +624,18 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
 }
 
+@media(min-width: 901px) {
+    .work__image-box {
+        flex: 1;
+        margin: 0 0 0 10rem;
+    }
+}
+
+@media(max-width: 900px) {
+    .work__code {
+        height: 4rem;
+    }
+}
 
 /* --------------------------------------- */
 /* ----- References----- */
@@ -544,6 +648,7 @@ body:not(.user-is-tabbing) a:focus {
   color: black;
   border: 3px solid var(--pink2);
   border-radius: 70px;
+  font-size: 20px;
   width: 100%; /* Adjust the percentage or use a specific value like pixels (px) */
   margin: 0 auto; /* Center the container horizontally */
   display: block; /* Ensure it takes up the full width */
@@ -572,7 +677,7 @@ body:not(.user-is-tabbing) a:focus {
   padding: 16px;
   color: #888;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
