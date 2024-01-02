@@ -1,16 +1,15 @@
 
 ### Minimal and accessible portfolio  ✨.
 
-![](https://api.visitorbadge.io/api/VisitorHit?user=natasabrisudova&repo=natasabrisudova.github.io&countColor=%237B1E7A)
+![](https://api.visitorbadge.io/api/VisitorHit?user=nssharmaofficial&repo=nssharmaofficial.github.io&countColor=%237B1E7A)
 
 To View the live site click [here &rarr;](https://nssharmaofficial.github.io)
 
-![Portfolio Gif](/images/portfolio.png)
+![Portfolio Gif](/images/portfolio2.png)
 
 ## Features
 
 - Clean, Simple and Modern UI Design.
-- Uses No CSS or JavaScript Frameworks or libraries as dependencies.
 - Built with only HTML, CSS and a bit of JavaScript 🔨.
 - Well Organized Documentation.
 - Keyboard support.
